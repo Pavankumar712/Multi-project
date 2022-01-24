@@ -14,7 +14,7 @@ pipeline {
         }
          stage('continuous deploy') {
             steps {
-            sh 'sshpass -p "pavan" scp target/hello-1.0.war sai@172.17.0.4:/opt/apache-tomcat-9.0.56/webapps '    
+            sh 'sshpass -p "pavan" scp target/hello-1.0.war pavan@172.17.0.4:/opt/apache-tomcat-9.0.56/webapps '    
             }
         }
     }
